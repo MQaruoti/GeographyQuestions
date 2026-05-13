@@ -6,7 +6,7 @@ from telegram.ext import Application, CommandHandler, CallbackQueryHandler, Cont
 import os
 
 # --- CONFIGURATION ---
-TOKEN = "8726326578:AAGDpnmRmGaYt9BWViQi5UXWwZjdvww5LBM"
+TOKEN = os.getenv("BOT_TOKEN")
 nest_asyncio.apply()
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
